@@ -1,11 +1,10 @@
 import { ReactNode } from 'react'
-import { Site } from '@penxio/types'
 import { Footer } from '../components/Footer'
 import { Header } from '../components/Header'
 import SectionContainer from '../components/SectionContainer'
 
 interface Props {
-  site: Site
+  site: any
   Logo: () => ReactNode
   ModeToggle: () => ReactNode
   MobileNav: () => ReactNode
@@ -25,12 +24,6 @@ export function SiteLayout({
 }: Props) {
   return (
     <SectionContainer>
-      {ModeToggle && (
-        <div className="absolute top-3 right-3 hidden xs:block">
-          <ModeToggle />
-        </div>
-      )}
-
       <Header
         site={site}
         Logo={Logo}

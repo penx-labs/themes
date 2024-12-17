@@ -13,7 +13,7 @@ export function Footer({ site, ModeToggle }: Props) {
   return (
     <footer className="mt-auto mb-8">
       <div className="mt-16 flex flex-col items-center">
-        <div className="mb-3 flex space-x-4 item-center">
+        <div className="mb-3 flex space-x-4">
           <SocialIcon kind="mail" href={`mailto:${socials?.email}`} size={6} />
           <SocialIcon kind="github" href={socials.github} size={6} />
           <SocialIcon kind="facebook" href={socials.facebook} size={6} />
@@ -24,7 +24,7 @@ export function Footer({ site, ModeToggle }: Props) {
           <SocialIcon kind="instagram" href={socials.instagram} size={6} />
           <SocialIcon kind="threads" href={socials.threads} size={6} />
         </div>
-        <div className="flex gap-2 text-sm justify-center item-center text-foreground/50">
+        <div className="mb-2 flex space-x-2 text-sm item-center text-card-foreground/50">
           <div className="flex items-center">{`© ${new Date().getFullYear()}`}</div>
           <div className="flex items-center">{` • `}</div>
           <div className="flex items-center">{site.name}</div>

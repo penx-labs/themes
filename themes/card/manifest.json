@@ -1,7 +1,6 @@
 {
-  "name": "card",
   "title": "Card",
   "author": "0xZio",
-  "description": "",
+  "description": "Encode and decode base64.",
   "screenshots": []
 }

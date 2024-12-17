@@ -9,7 +9,6 @@
   "components/PostItem.tsx",
   "components/PostList.tsx",
   "components/PostListWithTag.tsx",
-  "components/PostTypeNav.tsx",
   "components/SectionContainer.tsx",
   "components/Tag.tsx",
   "components/TagList.tsx",

@@ -16,10 +16,9 @@ export function BlogPage({
   pagination,
   initialDisplayPosts,
 }: Props) {
-
   return (
     <div className="space-y-6">
-      <PageTitle>Blog</PageTitle>
+      <PageTitle className="text-center">Blog</PageTitle>
       <PostList
         posts={posts}
         pagination={pagination}
