@@ -1,23 +1,22 @@
+import { cn } from '@/lib/utils'
 import { slug } from 'github-slugger'
 import Link from 'next/link'
-import { PostTag } from '@penxio/types'
-import { cn } from '@/lib/utils'
 
 interface Props {
-  postTag: PostTag
+  text: string
   className?: string
 }
 
-const Tag = ({ postTag, className }: Props) => {
+const Tag = ({ text, className }: Props) => {
   return (
     <Link
-      href={`/tags/${slug(postTag.tag.name)}`}
+      href={`/tags/${slug(text)}`}
       className={cn(
         'mr-3 text-base font-medium text-brand-500 hover:text-brand-600 dark:hover:text-brand-400',
         className,
       )}
     >
-      {postTag.tag.name.split(' ').join('-')}
+      {text.split(' ').join('-')}
     </Link>
   )
 }

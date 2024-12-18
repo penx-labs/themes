@@ -1,10 +1,11 @@
 import { ReactNode } from 'react'
 import { Footer } from '@/components/theme-ui/Footer'
+import { Site } from '@penxio/types'
 import { Header } from '../components/Header'
 import SectionContainer from '../components/SectionContainer'
 
 interface Props {
-  site: any
+  site: Site
   children: ReactNode
 }
 
